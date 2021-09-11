@@ -1,0 +1,16 @@
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\RandomUtility.exe
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\RandomUtility.deps.json
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\RandomUtility.runtimeconfig.json
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\RandomUtility.runtimeconfig.dev.json
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\RandomUtility.dll
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\ref\RandomUtility.dll
+J:\DotNetPractice projects\github\RandomUtility\bin\Debug\net5.0\RandomUtility.pdb
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.csproj.AssemblyReference.cache
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.GeneratedMSBuildEditorConfig.editorconfig
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.AssemblyInfoInputs.cache
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.AssemblyInfo.cs
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.csproj.CoreCompileInputs.cache
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.dll
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\ref\RandomUtility.dll
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.pdb
+J:\DotNetPractice projects\github\RandomUtility\obj\Debug\net5.0\RandomUtility.genruntimeconfig.cache
