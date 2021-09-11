@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtilityTest\\RandomUtilityTest.csproj": {}
+  },
+  "projects": {
+    "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtilityTest\\RandomUtilityTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtilityTest\\RandomUtilityTest.csproj",
+        "projectName": "RandomUtilityTest",
+        "projectPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtilityTest\\RandomUtilityTest.csproj",
+        "packagesPath": "C:\\Users\\kishalaya\\.nuget\\packages\\",
+        "outputPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtilityTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kishalaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj": {
+                "projectPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj",
+        "projectName": "Utility",
+        "projectPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj",
+        "packagesPath": "C:\\Users\\kishalaya\\.nuget\\packages\\",
+        "outputPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kishalaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtility.csproj",
-      "projectName": "RandomUtility",
-      "projectPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\RandomUtility.csproj",
+      "projectUniqueName": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj",
+      "projectName": "Utility",
+      "projectPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\Utility.csproj",
       "packagesPath": "C:\\Users\\kishalaya\\.nuget\\packages\\",
-      "outputPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\obj\\",
+      "outputPath": "J:\\DotNetPractice projects\\github\\RandomUtility\\Utility\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kishalaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
