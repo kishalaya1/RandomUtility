@@ -45,6 +45,56 @@ namespace RandomUtilityTest
         }
 
         /// <summary>
+        /// check factorial of a number
+        /// </summary>
+        /// <param name="testData"></param>
+        [Test, TestCaseSource(nameof(FactorialTestCases))]
+        public void Test_Factorial(TestNo testData)
+        {
+            //Arrange             
+            //Act
+            var result = Num.Factorial(testData.No);
+
+            //Assert
+            Assert.AreEqual(testData.ExpectedResult, result,
+                "Factorial has failed for the number :" + testData.No);
+
+        }
+
+        /// <summary>
+        /// check factorial of a number
+        /// using recursion
+        /// </summary>
+        /// <param name="testData"></param>
+        [Test, TestCaseSource(nameof(FactorialTestCases))]
+        public void Test_RecursionFactorial(TestNo testData)
+        {
+            //Arrange             
+            //Act
+            var result = Num.RecursionFactorial(testData.No);
+
+            //Assert
+            Assert.AreEqual(testData.ExpectedResult, result,
+                "Factorial has failed for the number :" + testData.No);
+
+        }
+
+        /// <summary>
+        /// Test Cases for factorial
+        /// </summary>
+        /// <returns></returns>
+        private static List<TestNo> FactorialTestCases()
+        {
+            List<TestNo> lstNoData = new List<TestNo>();
+            lstNoData.Add(AddTestNoData(1, 1));
+            lstNoData.Add(AddTestNoData(2, 2));
+            lstNoData.Add(AddTestNoData(5, 120));
+            lstNoData.Add(AddTestNoData(-120, 0));
+            lstNoData.Add(AddTestNoData(0, 0));
+            return lstNoData;
+        }
+
+        /// <summary>
         /// add a single testNo Data
         /// </summary>
         /// <param name="inputNo"></param>
