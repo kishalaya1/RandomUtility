@@ -94,6 +94,39 @@ namespace RandomUtilityTest
             return lstNoData;
         }
 
+
+        /// <summary>
+        /// test case for IsPrimeNo method
+        /// </summary>
+        /// <param name="testData"></param>
+        [Test, TestCaseSource(nameof(PrimeNoTestCases))]
+        public void Test_IsPrime(KeyValuePair<int,bool> testData)
+        {
+            //Arrange             
+            //Act
+            var result = Num.IsPrimeNo(testData.Key);
+
+            //Assert
+            Assert.AreEqual(testData.Value, result,
+                "Prime No test has failed for the number :" + testData.Key);
+
+        }
+
+        /// <summary>
+        /// test cases for prime nos
+        /// </summary>
+        /// <returns></returns>
+        private static Dictionary<int,bool> PrimeNoTestCases()
+        {
+            Dictionary<int, bool> lstNos = new Dictionary<int, bool>();
+            lstNos.Add(0,false);
+            lstNos.Add(1, false);
+            lstNos.Add(2, true);
+            lstNos.Add(4, false);
+            lstNos.Add(99, false);
+            return lstNos;
+        }
+
         /// <summary>
         /// add a single testNo Data
         /// </summary>

@@ -72,6 +72,32 @@ namespace Utility
             }
             return factorial;
         }
-
+        /// <summary>
+        /// Checks whether a no is a prime no
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public static bool IsPrimeNo(int number)
+        {
+            bool isPrime = true;
+            if (number > 1)
+            {
+                for (int i = 2; i <= number - 1; i++)
+                {
+                    if (number % i == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            else
+            {//  0 and 1 are not prime nos
+                isPrime = false;
+            }
+            return isPrime;
+        }
     }
+
 }
+
