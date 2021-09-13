@@ -80,11 +80,13 @@ namespace Utility
         public static bool IsPrimeNo(int number)
         {
             bool isPrime = true;
+            //we start dividing the no from 2 onwards
+            //since every no is divisble by 1
             if (number > 1)
             {
-                for (int i = 2; i <= number - 1; i++)
+                for (int divisorNo = 2; divisorNo <= number - 1; divisorNo++)
                 {
-                    if (number % i == 0)
+                    if (number % divisorNo == 0)
                     {
                         isPrime = false;
                         break;
