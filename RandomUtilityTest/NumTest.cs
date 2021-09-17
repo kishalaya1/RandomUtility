@@ -89,8 +89,8 @@ namespace RandomUtilityTest
             lstNoData.Add(AddTestNoData(1, 1));
             lstNoData.Add(AddTestNoData(2, 2));
             lstNoData.Add(AddTestNoData(5, 120));
-            lstNoData.Add(AddTestNoData(-120, 0));
-            lstNoData.Add(AddTestNoData(0, 0));
+            lstNoData.Add(AddTestNoData(-120, 1));
+            lstNoData.Add(AddTestNoData(0, 1));
             return lstNoData;
         }
 

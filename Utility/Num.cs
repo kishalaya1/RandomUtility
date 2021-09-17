@@ -33,7 +33,7 @@ namespace Utility
         /// <returns></returns>
         public static int Factorial(int number)
         {
-            int factorial = 0;
+            int factorial = 1;
             //let's assume  it for only positive number
             //number! is for integer. number >0
             if (number > 0)
@@ -55,7 +55,7 @@ namespace Utility
         /// <returns></returns>
         public static int RecursionFactorial(int number)
         {
-            int factorial = 0;
+            int factorial = 1;
             //let's assume  it for only positive number
             //number! is for integer. number >0
             if (number > 0)
