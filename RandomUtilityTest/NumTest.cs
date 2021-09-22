@@ -113,6 +113,23 @@ namespace RandomUtilityTest
         }
 
         /// <summary>
+        /// test case for IsPrimeNoComplex method
+        /// </summary>
+        /// <param name="testData"></param>
+        [Test, TestCaseSource(nameof(PrimeNoTestCases))]
+        public void Test_IsPrimeNoComplex(KeyValuePair<int, bool> testData)
+        {
+            //Arrange             
+            //Act
+            var result = Num.IsPrimeNoComplex(testData.Key);
+
+            //Assert
+            Assert.AreEqual(testData.Value, result,
+                "Prime No test has failed for the number :" + testData.Key);
+
+        }
+
+        /// <summary>
         /// test cases for prime nos
         /// </summary>
         /// <returns></returns>
@@ -122,7 +139,12 @@ namespace RandomUtilityTest
             lstNos.Add(0,false);
             lstNos.Add(1, false);
             lstNos.Add(2, true);
+            lstNos.Add(3, true);
             lstNos.Add(4, false);
+            lstNos.Add(5, true);
+            lstNos.Add(6, false);
+            lstNos.Add(7, true);
+            lstNos.Add(53, true);
             lstNos.Add(99, false);
             return lstNos;
         }

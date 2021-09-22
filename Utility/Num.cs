@@ -99,6 +99,67 @@ namespace Utility
             }
             return isPrime;
         }
+
+        /// <summary>
+        /// checks for a prime number in efficient
+        /// matter
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public static bool IsPrimeNoComplex(int number)
+        {
+            bool isPrime = true;
+            //we start dividing the no from 2 onwards
+            //since every no is divisible by 1
+            if (number > 1)
+            {
+                // keep checking till square root .no need to check beyond
+                ///that
+                int maxDivisor = Convert.ToInt32(Math.Sqrt(number));
+                //skip checking for division by an even number
+                //because if the number is divisible by 2 
+                //and it will escape the loop flagging isprime= false
+                //also all even number by definition is divisible by 2.
+                bool evenDivisor = true;
+                for (int divisorNo = 2; divisorNo <= maxDivisor; divisorNo++)
+                {
+                    if (divisorNo <=2 || evenDivisor == false)
+                    {
+                        if (number % divisorNo == 0)
+                        {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+
+                    evenDivisor = SwitchState(evenDivisor);
+                }
+            }
+            else
+            {//  0 and 1 are not prime nos
+                isPrime = false;
+            }
+            return isPrime;
+        }
+        
+        /// <summary>
+        /// switches the boolean state
+        /// </summary>
+        /// <param name="evenDivisor"></param>
+        /// <returns></returns>
+        private static bool SwitchState(bool evenDivisor)
+        {
+            if (evenDivisor == true)
+            {
+                evenDivisor = false;
+            }
+            else
+            {
+                evenDivisor = true;
+            }
+
+            return evenDivisor;
+        }
     }
 
 }
