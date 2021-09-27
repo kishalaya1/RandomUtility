@@ -22,5 +22,18 @@ namespace Utility
             }
             return reversedWord;
         }
+
+        /// <summary>
+        /// Reverses the word
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
+        public static string ReverseWordAlt(string word)
+        {
+            //using in-built methods of linq 
+            //to reverse the word            
+            string reversedWord = new string(word.ToCharArray().Reverse().ToArray());
+            return reversedWord;
+        }
     }
 }

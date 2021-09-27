@@ -30,6 +30,22 @@ namespace RandomUtilityTest
         }
 
         /// <summary>
+        /// check reversewordAlt method
+        /// </summary>
+        /// <param name="testData"></param>
+        [Test, TestCaseSource(nameof(ReverseWordTestCases))]
+        public void Test_ReverseWordAlt(KeyValuePair<string, string> testData)
+        {
+            //Arrange             
+            //Act
+            var actualResult = Word.ReverseWordAlt(testData.Key);
+
+            //Assert
+            Assert.AreEqual(testData.Value, actualResult,
+                "Reversing of word has failed for the word :" + testData.Key);
+        }
+
+        /// <summary>
         /// Test cases for reverseWord
         /// </summary>
         /// <returns></returns>
