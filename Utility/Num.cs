@@ -123,7 +123,7 @@ namespace Utility
                 bool evenDivisor = true;
                 for (int divisorNo = 2; divisorNo <= maxDivisor; divisorNo++)
                 {
-                    if (divisorNo <=2 || evenDivisor == false)
+                    if (divisorNo <= 2 || evenDivisor == false)
                     {
                         if (number % divisorNo == 0)
                         {
@@ -141,7 +141,7 @@ namespace Utility
             }
             return isPrime;
         }
-        
+
         /// <summary>
         /// switches the boolean state
         /// </summary>
