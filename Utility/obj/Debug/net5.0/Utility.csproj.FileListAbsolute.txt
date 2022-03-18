@@ -13,4 +13,3 @@ J:\DotNetPractice projects\github\RandomUtility\Utility\obj\Debug\net5.0\Utility
 J:\DotNetPractice projects\github\RandomUtility\Utility\obj\Debug\net5.0\ref\Utility.dll
 J:\DotNetPractice projects\github\RandomUtility\Utility\obj\Debug\net5.0\Utility.pdb
 J:\DotNetPractice projects\github\RandomUtility\Utility\obj\Debug\net5.0\Utility.genruntimeconfig.cache
-J:\DotNetPractice projects\github\RandomUtility\Utility\obj\Debug\net5.0\Utility.csproj.AssemblyReference.cache

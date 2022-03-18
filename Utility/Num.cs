@@ -160,6 +160,50 @@ namespace Utility
 
             return evenDivisor;
         }
+
+        /// <summary>
+        /// Get fibonacci series till nth term
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public static List<int> GetFibonacciSeries(int number)
+        {
+            List<int> lstFibonacciNos = new List<int>();
+            int previousNo = 0, latestNo = 1;
+            switch (number)
+            {
+                case 0:
+                    break;
+                case 1:
+                    lstFibonacciNos.Add(previousNo);
+                    break;
+                case 2:
+                    lstFibonacciNos.Add(previousNo);
+                    lstFibonacciNos.Add(latestNo);
+                    break;
+                default:
+                    lstFibonacciNos = FetchFibonacciNo(number);
+                    break;
+            }
+            return lstFibonacciNos;
+        }
+
+        private static List<int> FetchFibonacciNo(int number)
+        {
+            List<int> lstFibonacciNos = new List<int>();
+            int previousNo = 0, latestNo = 1, newFibonacciNo = 0;
+            lstFibonacciNos.Add(previousNo);
+            lstFibonacciNos.Add(latestNo);
+            for (int i = 2; i < number; i++)
+            {
+                //adding previous two nos fetches the new Fibonacci series
+                newFibonacciNo = previousNo + latestNo;
+                lstFibonacciNos.Add(newFibonacciNo);
+                previousNo = latestNo;
+                latestNo = newFibonacciNo;
+            }
+            return lstFibonacciNos;
+        }
     }
 
 }
