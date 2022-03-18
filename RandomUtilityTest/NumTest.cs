@@ -165,7 +165,7 @@ namespace RandomUtilityTest
         }
 
         /// <summary>
-        /// test case for GetFibonacciSeries method
+        /// test case for GetFibonacciSeries 
         /// </summary>
         /// <param name="testData"></param>
         [Test, TestCaseSource(nameof(GetFibonacciSeriesTestCases))]
