@@ -217,7 +217,7 @@ namespace RandomUtilityTest
         }
 
         /// <summary>
-        /// test case for GetFibonacciSeries 
+        /// test case for FetchFizzBuzzSeries 
         /// </summary>
         /// <param name="testData"></param>
         [Test, TestCaseSource(nameof(GetFizzBuzzSeriesTestCases))]
