@@ -188,6 +188,11 @@ namespace Utility
             return lstFibonacciNos;
         }
 
+        /// <summary>
+        /// main fibonacci logic for normal scenarios
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         private static List<int> FetchFibonacciNo(int number)
         {
             List<int> lstFibonacciNos = new List<int>();
@@ -203,6 +208,41 @@ namespace Utility
                 latestNo = newFibonacciNo;
             }
             return lstFibonacciNos;
+        }
+
+        /// <summary>
+        /// Fetch FizzBuzz series
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        public static List<string> FetchFizzBuzzSeries(int number)
+        {
+            List<string> lstFizzBuzz = new List<string>();
+            string fizz = "Fizz";
+            string buzz = "Buzz";
+            string FizzBuzz = "FizzBuzz";
+            string currentDisplayTerm = string.Empty;
+            for (int i = 1; i <= number; i++)
+            {
+                if ((i % 3 == 0) && (i % 5 == 0))//number divisible by 3 & 5
+                {
+                    currentDisplayTerm = FizzBuzz;
+                }
+                else if (i % 3 == 0)//number divisible by 3
+                {
+                    currentDisplayTerm = fizz;
+                }
+                else if (i % 5 == 0)//number divisible by 5
+                {
+                    currentDisplayTerm = buzz;
+                }
+                else
+                {
+                    currentDisplayTerm = Convert.ToString(i);
+                }
+                lstFizzBuzz.Add(currentDisplayTerm);
+            }
+            return lstFizzBuzz;
         }
     }
 

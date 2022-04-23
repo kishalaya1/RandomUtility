@@ -216,6 +216,67 @@ namespace RandomUtilityTest
             return fibonacciNo;
         }
 
+        /// <summary>
+        /// test case for GetFibonacciSeries 
+        /// </summary>
+        /// <param name="testData"></param>
+        [Test, TestCaseSource(nameof(GetFizzBuzzSeriesTestCases))]
+        public void Test_FetchFizzBuzzSeries(TestFizzBuzz testData)
+        {
+            //Arrange             
+            //Act
+            var result = Num.FetchFizzBuzzSeries(testData.No);
+
+            //Assert
+            Assert.AreEqual(testData.ExpectedResult, result,
+                "Fizz Buzz Series has wrong result for the number :" + testData.No);
+
+        }
+
+        /// <summary>
+        /// test cases for Fibonaccci nos
+        /// </summary>
+        /// <returns></returns>
+        private static List<TestFizzBuzz> GetFizzBuzzSeriesTestCases()
+        {
+            List<TestFizzBuzz> lstFizBuzzTerms = new List<TestFizzBuzz>();
+            string fizz = "Fizz";
+            string buzz = "Buzz";
+            string FizzBuzz = "FizzBuzz";
+            string[] fiboSeries = { "1" };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(1, fiboSeries));
+            fiboSeries = new string[] { "1", "2" };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(2, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(3, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4" };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(4, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(5, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz, fizz };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(6, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz, fizz, "7" };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(7, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz, fizz, "7", "8" };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(8, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz, fizz, "7", "8", fizz };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(9, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz, fizz, "7", "8", fizz, buzz };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(10, fiboSeries));
+            fiboSeries = new string[] { "1", "2", fizz, "4", buzz, fizz, "7", "8", fizz, buzz, "11", fizz, "13", "14", FizzBuzz };
+            lstFizBuzzTerms.Add(GetFizzBuzzTestData(15, fiboSeries));
+            return lstFizBuzzTerms;
+        }
+        private static TestFizzBuzz GetFizzBuzzTestData(int number, string[] fibSeries)
+        {
+            TestFizzBuzz fizzBuzzNo = new(number);
+            if (fibSeries != null)
+            {
+                fizzBuzzNo.ExpectedResult = fibSeries.ToList();
+            }
+            return fizzBuzzNo;
+        }
+
         #region associated class, struct 
         public struct TestNo
         {
@@ -231,6 +292,17 @@ namespace RandomUtilityTest
             }
             public int No;
             public List<int> ExpectedResult;
+
+        }
+        public struct TestFizzBuzz
+        {
+            public TestFizzBuzz(int number)
+            {
+                ExpectedResult = new List<string>();
+                No = number;
+            }
+            public int No;
+            public List<string> ExpectedResult;
 
         }
         #endregion

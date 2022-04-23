@@ -22,7 +22,8 @@ namespace Utility
             //string result = Word.ReverseWord(inputWord);
 
             //fibonacci 
-            var result = Num.GetFibonacciSeries(inputNo);
+            //var result = Num.GetFibonacciSeries(inputNo);
+            var result = Num.FetchFizzBuzzSeries(inputNo);
             foreach (var item in result)
             {
                 Console.WriteLine("The result is : " + item);
