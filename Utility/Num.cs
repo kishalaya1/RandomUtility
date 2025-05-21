@@ -148,17 +148,8 @@ namespace Utility
         /// <param name="evenDivisor"></param>
         /// <returns></returns>
         private static bool SwitchState(bool evenDivisor)
-        {
-            if (evenDivisor == true)
-            {
-                evenDivisor = false;
-            }
-            else
-            {
-                evenDivisor = true;
-            }
-
-            return evenDivisor;
+        {        
+            return !evenDivisor;
         }
 
         /// <summary>
